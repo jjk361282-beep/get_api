@@ -7,14 +7,18 @@
     <title>Document</title>
 </head>
 <body class="flex justify-center items-center h-screen">
-    <div class="m-auto w-1/2 flex gap-5 flex-col justify-center" >
-        <div class="w-full flex gap-5">
+    <div class="m-auto  w-1/2 flex gap-5 flex-col justify-center" >
+        <div class="flex w-full items-center flex-col gap-5">
+            <button class="btn w-52 choix1 ">choix aleatoire pokemon </button>
+            <button class="btn w-52 choix2 ">choisi donc pokemon</button>
+        </div>
+        <div class="w-full flex justify-center gap-5">
             <input type="text" placeholder="search pokemon" name="" class="input" id="pokemon">
             <button class="btn pokemon_btn" >search</button>
         </div>
-        <div class="">
-            <img src="" alt="pokemon" srcset="">
-            <p>le pokemon</p>
+        <div class="flex flex-col justify-center items-center" >
+            <img src="" id="img_pokemon" alt="pokemon" srcset="" class="w-52 h-52 hidden" >
+            <p class="info"></p>
         </div>
     </div>
     <script src="app.js"></script>
